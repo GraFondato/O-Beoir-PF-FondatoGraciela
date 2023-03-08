@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "section section aside"
+    "section section aside"
+    "footer footer footer";
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: repeat(5,auto);
+
+}
+.header{
+    grid-area: header;
+    height: 700px;
+    font-size: 25px;
+    font-family: 'Germania One', cursive;
+    background-image: url(../image/header.png);
+    background-repeat: no-repeat;
+    background-size: 1350px;
+    color:rgb(32, 26, 15);
+    
+}
+
+.logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 200px 528px;
+}
+
+.navbar{
+    grid-area: navbar;
+    max-width: 100%;
+    margin: 1px;
+    padding: 1px;
+    font-family: 'Germania One', cursive;
+    color: rgb(245, 198, 111);
+    text-align: center;
+    background-color: rgb(97, 70, 19);
+}
+
+.section{
+    grid-area: section;
+    background-color: rgb(66, 66, 66);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(163, 162, 159);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.img-article{
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px 10px black;
+    margin: 25px;
+    
+}
+
+.img-article:hover{
+    transform: scale(1,1.8);
+}
+
+.body{
+    background-color: rgb(66, 66, 66);
+    font-family: 'Germania One', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer{
+    grid-area: footer;
+    font-family: 'Germania One', cursive;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+}
+
+.material-icons{
+    display: flex;
+    justify-items: center;
+    color: rgb(66, 66, 66);
+    text-align: center;
+    text-decoration: dashed;
+    justify-content: center;
+    margin: 10px;
+}
+
+.formulario{
+    text-align: center;
+    color: rgb(139, 92, 4);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.h3{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(139, 92, 4);
+    font-size: 25px;
+    font-family: 'Germania One', cursive;
+}
+
+.h2{
+    margin: 25px;
+    color: cornsilk;
+    text-align: center;
+
+}
+.aside{
+    grid-area: aside;
+    background-color:rgb(163, 162, 159);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.video{
+    margin: 20px 5px;
+}
+
+.p{
+    color: cornsilk;
+    margin: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+    .section{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .aside{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+}
+/*css page nuestras variedades*/
+.aside-nv{
+    grid-area: aside;
+    background-color:rgb(163, 162, 159);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.img-nv{
+    border-radius: 10px;
+    margin: 30px 75px;
+    justify-content: center;
+}
+
+#golden{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(163, 162, 159);
+    margin: 50px auto;
+}
+
+#red{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(163, 162, 159);
+    margin: 50px auto;
+}
+
+#black{
+    text-align: left;
+    font-size: 30px;
+    color: rgb(163, 162, 159);
+    margin: 50px auto;
+}
+
+.h3{
+    text-align: left;
+    font-size: 45px;
+    color: rgb(163, 162, 159);
+}
+
+.section-nv{
+    grid-area: section;
+    background-color: rgb(66, 66, 66);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(163, 162, 159);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+    }
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+    .aside-nv{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .section-nv{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+}
+
+/*css la historia*/
+
+.footer-hist{
+    grid-area: footer;
+    font-family: 'Germania One', cursive;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+    }
+
+.section-hist{
+    grid-area: aside;
+    background-color: rgb(66, 66, 66);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(163, 162, 159);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+    }
+    
+    .aside-hist{
+    grid-area: section;
+    background-color:rgb(163, 162, 159);
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.card{
+    margin: 30px 60px;
+}
+
+/*css nuestros lugares*/
+
+.section-nl1{
+    grid-area: section, aside;
+    background-color: rgb(66, 66, 66);
+    margin: 40px 200px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(163, 162, 159);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.section-nl2{
+    grid-area: section, aside;
+    background-color: rgb(66, 66, 66);
+    margin: 50px 200px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(163, 162, 159);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.footer-nl{
+    grid-area: footer;
+    font-family: 'Germania One', cursive;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+}
