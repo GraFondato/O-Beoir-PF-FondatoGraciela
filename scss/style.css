@@ -89,7 +89,8 @@
   justify-items: center;
   color: rgb(66, 66, 66);
   text-align: center;
-  text-decoration: dashed;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
   justify-content: center;
   margin: 10px;
 }
@@ -354,6 +355,4 @@
   .footer-nl {
     max-width: 30%;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

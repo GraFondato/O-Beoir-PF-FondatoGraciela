@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*variables*/
+$color-claro: cornsilk;
+$color-oscuro: rgb(32, 26, 15);
+$background: rgb(66, 66, 66);
+
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "section section aside"
+    "section section aside"
+    "footer footer footer";
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows: repeat(5,auto);
+
+}
+/*css index*/
+.header{
+    grid-area: header;
+    height: 580px;
+    font-size: 25px;
+    font-family: 'Germania One', cursive;
+    background-image: url(../image/header.png);
+    background-repeat: no-repeat;
+    background-size: 1350px;
+    color: $color-oscuro;
+    
+}
+
+.logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 130px 528px;
+}
+
+.navbar{
+    grid-area: navbar;
+    max-width: 100%;
+    margin: 1px;
+    padding: 1px;
+    font-family: 'Germania One', cursive;
+    color: rgb(245, 198, 111);
+    text-align: center;
+    background-color: rgb(97, 70, 19);
+}
+
+.section{
+    grid-area: section;
+    background-color: $background;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: $color-claro;
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.img-article{
+    border-radius: 100%;
+    box-shadow: 10px 10px 10px 10px black;
+    margin: 25px;
+    
+}
+
+.img-article:hover{
+    transform: scale(1,1.8);
+}
+
+.body{
+    background-color: $background;
+    font-family: 'Germania One', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer{
+    grid-area: footer;
+    font-family: 'Germania One', cursive;
+    color: $background;
+    font-size: 20px;
+    background-color: $color-claro;
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+}
+
+.material-icons{
+    display: flex;
+    justify-items: center;
+    color: $background;
+    text-align: center;
+    text-decoration: dashed;
+    justify-content: center;
+    margin: 10px;
+}
+
+.h3{
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(139, 92, 4);
+    font-size: 25px;
+    font-family: 'Germania One', cursive;
+}
+
+.h2{
+    margin: 25px;
+    color: $color-claro;
+    text-align: center;
+
+}
+.aside{
+    grid-area: aside;
+    background-color:$color-claro;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.video{
+    margin: 20px 5px;
+}
+
+.p{
+    color: $color-claro;
+    margin: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+    .header{
+        width: auto;
+    }
+
+    .logo{
+        margin: 5%;
+    }
+
+    .section{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        max-width: 30%;
+    }
+
+    .img-article{
+        margin: auto;
+        width: 80%;
+    }
+
+    .aside{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        max-width: 30%;
+    }
+
+    .footer{
+        max-width: 30%;
+    }
+
+    .video{
+        margin: auto;
+        width: 300px;
+    }
+}
+/*css page contacto*/
+    .main{
+    grid-area: aside;
+    text-align: center;
+    color: $color-claro;
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.contacto{
+    grid-area: section;
+    text-align: center;
+    margin: 100px;
+    color: $color-claro;
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+
+    .main{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        max-width: 30%;
+    }
+
+    .contacto{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        max-width: 20%;
+        margin: 35px;
+    }
+
+    .img-contacto{
+        width: 350px;
+        max-height: 600px;
+    }
+
+    .footer-hist{
+        max-width: 30%;
+    }
+}
+
+
+/*css page nuestras variedades*/
+.aside-nv{
+    grid-area: aside;
+    background-color:$color-claro;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.img-nv{
+    border-radius: 10px;
+    margin: 30px 75px;
+    justify-content: center;
+}
+
+#golden{
+    text-align: left;
+    font-size: 30px;
+    color: $color-claro;
+    margin: 50px auto;
+}
+
+#red{
+    text-align: left;
+    font-size: 30px;
+    color: $color-claro;
+    margin: 50px auto;
+}
+
+#black{
+    text-align: left;
+    font-size: 30px;
+    color: $color-claro;
+    margin: 50px auto;
+}
+
+.h3{
+    text-align: left;
+    font-size: 45px;
+    color: $color-claro;
+}
+
+.section-nv{
+    grid-area: section;
+    background-color: rgb(66, 66, 66);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: $color-claro;
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+    }
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+    .aside-nv{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .section-nv{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+    }
+}
+
+/*css la historia*/
+
+.footer-hist{
+    grid-area: footer;
+    font-family: 'Germania One', cursive;
+    color: $background;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+    }
+
+.section-hist{
+    grid-area: aside;
+    background-color: $background;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: $color-claro;
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+    }
+    
+.aside-hist{
+    grid-area: section;
+    background-color:$color-claro;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.card{
+    margin: 30px 60px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+
+    .section-hist{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        max-width: 30%;
+    }
+
+    .aside-hist{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        max-width: 30%;
+    }
+
+    .footer-hist{
+        max-width: 30%;
+    }
+}
+
+
+/*css nuestros lugares*/
+
+.section-nl1{
+    grid-area: section;
+    background-color: rgb(66, 66, 66);
+    width: 60%;
+    margin: 20px 5px;
+    padding: 10px;
+    text-align: center;
+    color: $color-claro;
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.section-nl2{
+    grid-area: aside;
+    background-color: $background;
+    margin: 20px 0px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    color: rgb(163, 162, 159);
+    font-size: 15px;
+    font-family: 'Germania One', cursive;
+}
+
+.footer-nl{
+    grid-area: footer;
+    font-family: 'Germania One', cursive;
+    color: $background;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 700px){
+
+    .section-nl1{
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        max-width: 30%;
+    }
+
+    .section-nl2{
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        max-width: 30%;
+    }
+
+    .footer-nl{
+        max-width: 30%;
+    }
+}
+
