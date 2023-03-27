@@ -1,23 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*variables*/
-.container-fluid {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-areas: "header header header" "navbar navbar navbar" "section section aside" "section section aside" "footer footer footer";
-  grid-template-columns: 450px 450px 450px;
-  grid-template-rows: repeat(5, auto);
+
+.container {
+  margin: 0px;
+  padding: 0px;
 }
 
 /*css index*/
 .header {
-  grid-area: header;
   height: 580px;
   font-size: 25px;
   font-family: "Germania One", cursive;
@@ -31,12 +27,10 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  margin: 130px 528px;
+  margin: 0px 400px;
 }
 
 .navbar {
-  grid-area: navbar;
-  max-width: 100%;
   margin: 1px;
   padding: 1px;
   font-family: "Germania One", cursive;
@@ -46,10 +40,9 @@
 }
 
 .section {
-  grid-area: section;
   background-color: rgb(66, 66, 66);
-  margin: 10px;
-  padding: 10px;
+  margin: 1px;
+  padding: 1px;
   text-align: center;
   color: cornsilk;
   font-size: 15px;
@@ -57,24 +50,21 @@
 }
 
 .img-article {
-  border-radius: 100%;
+  border-radius: 50%;
   box-shadow: 10px 10px 10px 10px black;
-  margin: 25px;
+  margin: 10px;
 }
 
 .img-article:hover {
-  transform: scale(1, 1.8);
+  transform: scale(1, 1.5);
 }
 
 .body {
   background-color: rgb(66, 66, 66);
   font-family: "Germania One", cursive;
-  margin: 0px;
-  padding: 0px;
 }
 
 .footer {
-  grid-area: footer;
   font-family: "Germania One", cursive;
   color: rgb(66, 66, 66);
   font-size: 20px;
@@ -110,10 +100,9 @@
 }
 
 .aside {
-  grid-area: aside;
   background-color: cornsilk;
   border-radius: 8px;
-  margin: 10px;
+  margin: 1px;
 }
 
 .video {
@@ -125,7 +114,7 @@
   margin: 10px;
   font-size: 20px;
 }
-
+/*media query
 @media only screen and (min-width: 400px) and (max-width: 700px) {
   .header {
     width: auto;
@@ -155,6 +144,44 @@
     width: 300px;
   }
 }
+
+@media only screen and (min-width: 200px) and (max-width: 399px){
+
+  .header{
+      width: auto;
+  }
+
+  .logo{
+      margin: 5%;
+  }
+
+  .section{
+      grid-column: 1 / 4;
+      grid-row: 3 / 4;
+      max-width: 30%;
+  }
+
+  .img-article{
+      margin: auto;
+      width: 80%;
+  }
+
+  .aside{
+      grid-column: 1 / 4;
+      grid-row: 4 / 5;
+      max-width: 30%;
+  }
+
+  .footer{
+      max-width: 30%;
+  }
+
+  .video{
+      margin: auto;
+      width: 300px;
+  }
+}*/
+
 /*css page contacto*/
 .main {
   grid-area: aside;
@@ -172,8 +199,29 @@
   font-size: 15px;
   font-family: "Germania One", cursive;
 }
-
+/*
 @media only screen and (min-width: 400px) and (max-width: 700px) {
+  .main {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    max-width: 30%;
+  }
+  .contacto {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    max-width: 20%;
+    margin: 35px;
+  }
+  .img-contacto {
+    width: 350px;
+    max-height: 600px;
+  }
+  .footer-hist {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
   .main {
     grid-column: 1/4;
     grid-row: 3/4;
@@ -244,7 +292,7 @@
   font-size: 15px;
   font-family: "Germania One", cursive;
 }
-
+/*
 @media only screen and (min-width: 400px) and (max-width: 700px) {
   .aside-nv {
     grid-column: 1/4;
@@ -255,6 +303,19 @@
     grid-row: 4/5;
   }
 }
+
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+  .aside-nv {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .section-nv {
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+}
+
 /*css la historia*/
 .footer-hist {
   grid-area: footer;
@@ -288,8 +349,24 @@
 .card {
   margin: 30px 60px;
 }
-
+/*
 @media only screen and (min-width: 400px) and (max-width: 700px) {
+  .section-hist {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    max-width: 30%;
+  }
+  .aside-hist {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    max-width: 30%;
+  }
+  .footer-hist {
+    max-width: 30%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
   .section-hist {
     grid-column: 1/4;
     grid-row: 3/4;
@@ -339,7 +416,7 @@
   align-items: center;
   text-align: center;
 }
-
+/*
 @media only screen and (min-width: 400px) and (max-width: 700px) {
   .section-nl1 {
     grid-column: 1/4;
@@ -355,5 +432,22 @@
     max-width: 30%;
   }
 }
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+  .section-nl1 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    max-width: 30%;
+  }
+  .section-nl2 {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    max-width: 30%;
+  }
+  .footer-nl {
+    max-width: 30%;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
