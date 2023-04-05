@@ -109,7 +109,12 @@
   text-align: center;
 }
 
+.h2-section{
+  color: cornsilk;
+}
+
 .aside {
+  margin: auto;
   background-image: linear-gradient(to left, rgb(199, 199, 199), rgb(248, 241, 241), rgb(199, 199, 199));
   border-radius: 8px;
   margin: 1px;
