@@ -14,20 +14,28 @@
 
 /*css index*/
 .header {
-  height: 580px;
+  height: 480px;
   font-size: 25px;
   font-family: "Germania One", cursive;
   background-image: url(../image/header.png);
   background-repeat: no-repeat;
-  background-size: 1350px;
-  color: rgb(32, 26, 15);
-}
+  background-size: cover;
+  color: rgb(32, 26, 15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 .logo {
   display: flex;
   justify-items: center;
   align-items: center;
-  margin: 0px 400px;
+  margin: auto;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .navbar {
@@ -40,7 +48,6 @@
 }
 
 .section {
-  background-color: rgb(66, 66, 66);
   margin: 1px;
   padding: 1px;
   text-align: center;
@@ -52,15 +59,18 @@
 .img-article {
   border-radius: 50%;
   box-shadow: 10px 10px 10px 10px black;
-  margin: 10px;
+  margin: auto;
+  width: 100%;
+  height: auto;
 }
 
 .img-article:hover {
-  transform: scale(1, 1.5);
+  transform: scale(1, 1.1);
 }
 
 .body {
   background-color: rgb(66, 66, 66);
+  background-image: linear-gradient(to left, rgb(24, 24, 70), rgb(126, 124, 124));
   font-family: "Germania One", cursive;
 }
 
@@ -68,7 +78,7 @@
   font-family: "Germania One", cursive;
   color: rgb(66, 66, 66);
   font-size: 20px;
-  background-color: cornsilk;
+  background-image: linear-gradient(to left,rgb(24, 24, 70), rgb(212, 209, 195), rgb(119, 116, 116));
   justify-items: left;
   align-items: center;
   text-align: center;
@@ -94,25 +104,27 @@
 }
 
 .h2 {
-  margin: 25px;
-  color: cornsilk;
+  margin: 1rem;
+  color: rgb(66, 66, 66);
   text-align: center;
 }
 
 .aside {
-  background-color: cornsilk;
+  background-image: linear-gradient(to left, rgb(199, 199, 199), rgb(248, 241, 241), rgb(199, 199, 199));
   border-radius: 8px;
   margin: 1px;
 }
 
-.video {
-  margin: 20px 5px;
+.video-responsive {
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
-
-.p {
-  color: cornsilk;
+.parrafo {
+  color:  rgb(66, 66, 66);
   margin: 10px;
   font-size: 20px;
+  text-align: center;
 }
 /*media query
 @media only screen and (min-width: 400px) and (max-width: 700px) {
@@ -184,7 +196,6 @@
 
 /*css page contacto*/
 .main {
-  grid-area: aside;
   text-align: center;
   color: cornsilk;
   font-size: 15px;
@@ -192,7 +203,6 @@
 }
 
 .contacto {
-  grid-area: section;
   text-align: center;
   margin: 100px;
   color: cornsilk;
@@ -243,16 +253,20 @@
 }
 /*css page nuestras variedades*/
 .aside-nv {
-  grid-area: aside;
-  background-color: cornsilk;
+  background-image: radial-gradient(circle, rgb(216, 215, 213), rgb(253, 247, 224));
   border-radius: 8px;
-  margin: 10px;
+  margin: auto;
 }
 
 .img-nv {
-  border-radius: 10px;
-  margin: 30px 75px;
+  border-radius: 100px;
+  margin: 3rem 1rem 3rem 6rem;
   justify-content: center;
+  box-shadow: 6px 6px 6px 6px rgb(32, 32, 32);
+}
+
+.img-nv:hover {
+  transform: scale(1, 1.1);
 }
 
 #golden {
@@ -282,16 +296,6 @@
   color: cornsilk;
 }
 
-.section-nv {
-  grid-area: section;
-  background-color: rgb(66, 66, 66);
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  color: cornsilk;
-  font-size: 15px;
-  font-family: "Germania One", cursive;
-}
 /*
 @media only screen and (min-width: 400px) and (max-width: 700px) {
   .aside-nv {
@@ -318,19 +322,16 @@
 
 /*css la historia*/
 .footer-hist {
-  grid-area: footer;
   font-family: "Germania One", cursive;
   color: rgb(66, 66, 66);
   font-size: 20px;
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to left,rgb(24, 24, 70), rgb(212, 209, 195), rgb(119, 116, 116));
   justify-items: left;
   align-items: center;
   text-align: center;
 }
 
 .section-hist {
-  grid-area: aside;
-  background-color: rgb(66, 66, 66);
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -340,14 +341,14 @@
 }
 
 .aside-hist {
-  grid-area: section;
-  background-color: cornsilk;
+  background-image: radial-gradient(circle, rgb(216, 215, 213), rgb(253, 247, 224));
   border-radius: 8px;
-  margin: 10px;
+  margin: auto;
 }
 
 .card {
-  margin: 30px 60px;
+  margin: auto;
+  justify-items: center;
 }
 /*
 @media only screen and (min-width: 400px) and (max-width: 700px) {
@@ -383,11 +384,6 @@
 }
 /*css nuestros lugares*/
 .section-nl1 {
-  grid-area: section;
-  background-color: rgb(66, 66, 66);
-  width: 60%;
-  margin: 20px 5px;
-  padding: 10px;
   text-align: center;
   color: cornsilk;
   font-size: 15px;
@@ -395,26 +391,29 @@
 }
 
 .section-nl2 {
-  grid-area: aside;
-  background-color: rgb(66, 66, 66);
-  margin: 20px 0px;
-  padding: 10px;
-  width: 400px;
   text-align: center;
-  color: rgb(163, 162, 159);
+  color: cornsilk;
   font-size: 15px;
   font-family: "Germania One", cursive;
 }
 
 .footer-nl {
-  grid-area: footer;
   font-family: "Germania One", cursive;
   color: rgb(66, 66, 66);
   font-size: 20px;
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to left,rgb(24, 24, 70), rgb(212, 209, 195), rgb(119, 116, 116));
   justify-items: left;
   align-items: center;
   text-align: center;
+}
+
+.titulo{
+  margin: 10px;
+  transition: 1s;
+}
+
+.titulo:hover{
+  transform: scale(1,1.5);
 }
 /*
 @media only screen and (min-width: 400px) and (max-width: 700px) {

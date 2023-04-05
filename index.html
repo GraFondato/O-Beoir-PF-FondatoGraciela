@@ -16,7 +16,7 @@
 
 </head>
 <body class="body">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col">
         <header class="header">
@@ -54,26 +54,61 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-7 col-sm-8">
-        <section class="section">
-          <article>
-            <p class="p">Afianzado en nuestro origen nordico, tierra de Vikingos y Dioses, respetando antiguos rituales de elaboracion y antiguas recetas. Asi es que nace O´Beoir, una empresa destinada a que pruebes The Real Beer (La Verdadera Cerveza)</p>
-            <img class="img-article" src="./image/img-section1" alt="section1" width="400px" height="400px">
-          </article>  
-          <article>
-            <p class="p">Afianzado en nuestro origen nordico, tierra de Vikingos y Dioses, respetando antiguos rituales de elaboracion y antiguas recetas. Asi es que nace O´Beoir, una empresa destinada a que pruebes The Real Beer (La Verdadera Cerveza)</p>
-            <img class="img-article" src="./image/img-section2.jpg" alt="section2" width="400px" height="400px">
-          </article>
-        </section>
-      </div>
-      <div class="col-xl-5 col-sm-4">
-        <aside class="aside">
-          <h2 class="h2">Nuevos Lanzamientos</h2>
-          <iframe class="video" width="420" height="350" src="https://www.youtube.com/embed/lMfoo3arcHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus est maxime maiores ratione tenetur eum cumque veritatis, dignissimos nulla quisquam. Animi nulla tempora, quidem eum totam suscipit rerum sint est.</p>
-        </aside>
+      <div class="col">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./image/carrusel4.jpg" class="d-block w-100" height="500px" max-width="1000px" alt="carrusel1">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/carrusel1.jpg" class="d-block w-100" height="500px" max-width="1000px" alt="carrusel2">
+            </div>
+            <div class="carousel-item">
+              <img src="./image/carrusel.jpg" class="d-block w-100" height="500px" max-width="1000px" alt="carrusel3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <div class="card mb-3">
+          <img src="./image/carrusel3.jpg" class="card-img-top" alt="img-card1" width="600px" height="500px">
+          <div class="card-body">
+            <h5 class="card-title">The Real Beer</h5>
+            <p class="card-text">Afianzado en nuestro origen nordico, tierra de Vikingos y Dioses, respetando antiguos rituales de elaboracion y antiguas recetas. Asi es que nace O´Beoir, una empresa destinada a que pruebes The Real Beer (La Verdadera Cerveza)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Cerveza, simbolo de amistad...</h5>
+            <p class="card-text">A lo largo de los años, quedo comprobado que una buena y fria cerveza es la mejor opcion para compartir con amigos, elegida como la principal bebida para brindar y celebrar.</p>
+          </div>
+          <img src="./image/lugares.jpg" class="card-img-bottom" alt="img-card2" width="600px" height="500px">
+    </div>
+    <div class="row">  
+      <div class="col">
+        <aside class="aside">
+          <iframe class="video-responsive" width="560" height="315" src="https://www.youtube.com/embed/PciOO_V4g6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h2 class="h2">¿Espuma si o Espuma no?</h2>
+          <p class="parrafo">Existen varios mitos sobre la cantidad correcta de espuma en la cerveza, existen tambien los que aseguran que una buena cerveza no tiene que tenes espuma. ¿Que opinas al respecto?</p>
+          <p class="parrafo"> Nuestra recomendacion es que para disfrutar de una buena cerveza esta debe tener de 2 a 3 dedos de espuma.</p>
+        </aside>
+      </div>
+    </div>    
     <div class="row">  
       <div class="col">
         <footer class="footer">
